@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 //needs to be done
+//This is implementation of different version of Minesweeper without GUI
 //1) Count nearest mines
 //2) when box is empty open all nearest empty boxes and also nearest boxes with numbers
 //3) first hit not a mine?
