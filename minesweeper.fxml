@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane fx:id="gameGrid" alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="minesweeper.Main">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="gameWindow" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="buttonExit" layoutX="525.0" layoutY="382.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="80.0" text="Exit">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="fieldMines" layoutX="385.0" layoutY="275.0" prefHeight="25.0" prefWidth="200.0" promptText="0 &lt; value &lt; (tiles amount - 1)">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fieldWidth" layoutX="385.0" layoutY="236.0" prefHeight="25.0" prefWidth="200.0" promptText="1 &lt; value &lt; 31">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fieldHeight" layoutX="385.0" layoutY="194.0" prefHeight="25.0" prefWidth="200.0" promptText="1 &lt; value &lt; 41">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </TextField>
+            <Label layoutX="281.0" layoutY="71.0" text="Minesweeper">
+               <font>
+                  <Font name="Verdana Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="216.0" layoutY="199.0" text="Height">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="330.0" layoutY="150.0" text="Field properties">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="218.0" layoutY="241.0" text="Width">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="218.0" layoutY="280.0" text="Mines">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonStart" layoutX="195.0" layoutY="382.0" mnemonicParsing="false" onAction="#launch" prefHeight="40.0" prefWidth="80.0" text="Start">
+               <font>
+                  <Font name="Verdana Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
